@@ -158,6 +158,8 @@ figcaption{font-size:0.938rem;color:var(--muted);text-align:center;margin-top:8p
 .skill:nth-child(2) .step{background:var(--coral)} .skill:nth-child(2) .en{color:var(--coral-soft)}
 .skill:nth-child(3) .step{background:var(--gold)} .skill:nth-child(3) .en{color:var(--gold-soft)}
 .skill:nth-child(4) .step{background:var(--rose)} .skill:nth-child(4) .en{color:var(--rose-soft)}
+.skill:nth-child(5) .step{background:var(--teal-deep)} .skill:nth-child(5) .en{color:var(--teal-soft)}
+.skill:nth-child(5){grid-column:1 / -1}
 
 /* chat (LINE-style) */
 .chat{background:#A7C7DC;border-radius:20px;padding:18px 14px;box-shadow:var(--shadow)}
@@ -456,19 +458,21 @@ figure::after{content:"🔍 แตะเพื่อขยาย";position:absol
   </div>
 
   <div class="card">
-    <p class="lead">ความรอบรู้ด้านสุขภาพ คือ ทักษะในการค้นหาและทำความเข้าใจข้อมูลจากแหล่งที่น่าเชื่อถือ เพื่อนำไปประเมินและตัดสินใจดูแลตนเอง</p>
-    <p>ตามทฤษฎีของ Sorensen และคณะ (2012) ประกอบด้วย 4 ทักษะ</p>
+    <p class="lead">ความรอบรู้ด้านสุขภาพ คือ ทักษะในการค้นหา สืบค้นข้อมูลจากแหล่งที่น่าเชื่อถือ เพื่อทำความเข้าใจเกี่ยวกับภาวะสมองเสื่อมและพฤติกรรมที่ควรหรือไม่ควรปฏิบัติ แล้วนำข้อมูลที่ได้ไปประเมินและตัดสินใจในการนำไปปฏิบัติเพื่อดูแลตนเอง</p>
+    <p>ตามทฤษฎีของ Nutbeam (2008) อ้างใน ธีรณุฏฐ์ ไวยารัทธ์ (2566) ประกอบด้วย 5 ทักษะ</p>
   </div>
 
   <div class="skills">
     <div class="skill"><span class="en">A</span><div class="step">1</div>
-      <h4>เข้าถึง</h4><p>Access — สืบค้นข้อมูลจากแหล่งน่าเชื่อถือได้รวดเร็วและถูกต้อง</p></div>
+      <h4>การเข้าถึงข้อมูล</h4><p>Access — สืบค้นหาข้อมูลได้ตามความต้องการ รวดเร็วและถูกต้อง</p></div>
     <div class="skill"><span class="en">U</span><div class="step">2</div>
-      <h4>เข้าใจ</h4><p>Understand — เข้าใจข้อมูลที่ถูกต้อง และมีวิธีจดจำข้อมูลนั้น</p></div>
-    <div class="skill"><span class="en">A</span><div class="step">3</div>
-      <h4>ประเมิน</h4><p>Appraise — อธิบาย ตีความ และประเมินข้อมูลสุขภาพ</p></div>
-    <div class="skill"><span class="en">A</span><div class="step">4</div>
-      <h4>ปฏิบัติ</h4><p>Apply — นำข้อมูลที่ประเมินแล้วไปปฏิบัติในการดูแลตนเอง</p></div>
+      <h4>การเข้าใจ</h4><p>Understand — มีความรู้ความเข้าใจในข้อมูลที่ถูกต้อง และมีวิธีจดจำข้อมูลเหล่านั้น</p></div>
+    <div class="skill"><span class="en">C</span><div class="step">3</div>
+      <h4>การสื่อสาร</h4><p>Communication — สื่อสารโดยการพูด อ่าน เขียนข้อมูลเกี่ยวกับการปฏิบัติตัวเพื่อให้มีสุขภาพดี</p></div>
+    <div class="skill"><span class="en">D</span><div class="step">4</div>
+      <h4>การตัดสินใจ</h4><p>Decision — กำหนดทางเลือก และปฏิเสธ / หลีกเลี่ยง / เลือกวิธีปฏิบัติเพื่อให้มีสุขภาพดี</p></div>
+    <div class="skill"><span class="en">S</span><div class="step">5</div>
+      <h4>การจัดการตนเอง</h4><p>Self-management — กำหนดเป้าหมายและวางแผนการปฏิบัติตน เพื่อให้มีพฤติกรรมสุขภาพที่ถูกต้อง</p></div>
   </div>
 
   <div class="tip">
@@ -483,16 +487,18 @@ figure::after{content:"🔍 แตะเพื่อขยาย";position:absol
 
   <h3 style="margin:26px 0 14px;color:var(--rose);font-size:1.25rem">เหตุการณ์สมมติ: เรียนรู้ไปกับคุณแก้วตา</h3>
   <div class="chat">
-    <div class="scene">ณ ศูนย์บริการสาธารณสุข — หลังคุณแก้วตาได้รับความรู้จากพยาบาล</div>
-    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>เอ๊ะ! พยาบาลให้ความรู้หลายอย่าง แต่ลืมหมดแล้ว ไว้หาข้อมูลในอินเทอร์เน็ตก่อนดีกว่า</div></div>
-    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>เว็บนั้นว่าอย่างนั้น เว็บนี้ว่าอย่างนี้ อันนี้คนแชร์มาว่าดี... จะเชื่ออันไหนดีเนี่ย 😟</div></div>
+    <div class="scene">เหตุการณ์สมมติ ณ ศูนย์บริการสาธารณสุข 90 — คุณแก้วตา ชมรมผู้สูงอายุใจเบิกบาน หลังได้รับความรู้จากพยาบาล กำลังจะกลับบ้าน</div>
+    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>เอ๊ะ!! เมื่อกี้พยาบาลให้ความรู้หลายอย่าง แต่ลืมแล้ว แล้วที่ว่าออกกำลังกาย ออกยังไง อาหารห้ามกินหวาน มัน แล้วอะไรอีกนะ ก็ว่าจะถามแต่ก็ลืม.. งั้นไว้ครั้งหน้าแล้วกันค่อยมาถามใหม่ แต่ตอนนี้หาข้อมูลในอินเทอร์เน็ตก่อนแล้วกัน</div></div>
+    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>เอ๊ะ!! ในเว็บนั้นว่าอย่างนั้น ในเว็บนี้ว่าอย่างนี้ อันนี้คนแชร์มาว่าดี ทำตามเลยดีไหมเนี่ย</div></div>
+    <div class="scene">มีพยาบาลเดินผ่านมาพอดี.. จึงหยุดเพื่อทักทาย</div>
     <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>หาอะไรอยู่เหรอคะ ดูหน้าเครียดเชียว</div></div>
-    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>กำลังดูข้อมูลที่เขาแชร์มาค่ะ มันเชื่อถือได้ไหมคะ</div></div>
-    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>ดูได้จากที่มาของเว็บไซต์ ผู้เขียน และปี พ.ศ. ที่เขียนค่ะ ควรเป็นแพทย์หรือผู้เชี่ยวชาญ และข้อมูลไม่เก่าเกินไป</div></div>
-    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>แล้วจะจำคำแนะนำให้ได้ แล้วเอาไปดูแลตัวเอง ต้องทำยังไงคะ</div></div>
-    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>ทำเป็นขั้นตอนค่ะ — ค้นหาข้อมูลน่าเชื่อถือ → ทำความเข้าใจ → ประเมินว่าเหมาะสมไหม → แล้วค่อยนำไปปฏิบัติ</div></div>
-    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>น่าสนใจมากเลยค่ะ! 😊</div></div>
-    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>ทั้งหมดนี้คือองค์ประกอบของ "ความรอบรู้ด้านสุขภาพ" นั่นเองค่ะ</div></div>
+    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>กำลังดูข้อมูลที่เขาแชร์มา มันเชื่อถือได้ไหมคะ</div></div>
+    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>เชื่อถือได้ค่ะ ดูจากที่มาของเว็บไซต์ คนแต่ง พ.ศ. ที่เขียนค่ะ</div></div>
+    <div class="scene">ยื่นโทรศัพท์ให้พยาบาลดูข้อมูลในเว็บไซต์แห่งหนึ่ง</div>
+    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>แล้วถ้าฉันหาจากที่อื่น จะรู้ได้ยังไงว่าอันไหนเชื่อได้ และอีกอย่าง ตามที่ฟังคำแนะนำที่ให้ทำ ก็จำได้บ้างไม่ได้บ้างค่ะ จะทำยังไงให้จำได้ จะได้เอาความรู้ไปดูแลตัวเองได้</div></div>
+    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>ถ้าคุณแก้วตาอยากจะเสริมทักษะส่วนนี้เพื่อนำความรู้ไปดูแลตัวเองได้ พยาบาลจะแนะนำอย่างเป็นขั้นตอนนะคะ ขั้นตอนแรกจะพาคุณแก้วตาค้นหาข้อมูลที่น่าเชื่อถือ เมื่อได้ข้อมูลแล้วก็ศึกษาเรียนรู้และทำความเข้าใจข้อมูล หลังจากนั้นก็นำมาประเมินว่าเหมาะสมหรือไม่ และค่อยนำไปปฏิบัตินะคะ</div></div>
+    <div class="msg right"><div class="av">👵</div><div class="bub"><span class="who">คุณแก้วตา</span>น่าสนใจมากค่ะ 😊</div></div>
+    <div class="msg left"><div class="av">👩‍⚕️</div><div class="bub"><span class="who">พยาบาล</span>ค่ะ และที่พยาบาลแนะนำเป็นองค์ประกอบของความรอบรู้ด้านสุขภาพ ซึ่งจะแนะนำต่อไปค่ะ</div></div>
   </div>
 </div></section>
 
